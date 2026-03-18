@@ -8,10 +8,32 @@ namespace kicksharing
         [STAThread]
         static void Main()
         {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
-            ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+            bool exitprogram = false;
+
+
+            while (!exitprogram)
+            {
+                using (var formLogin = new FormLogin())
+                {
+                    if (formLogin.ShowDialog() == DialogResult.OK)
+                    {
+                        using (var formMenu = new FormScootersList(formLogin.CurentUser, formLogin.IsGauste))
+                        {
+
+                            if (formMenu.ShowDialog() == DialogResult.OK)
+                            {
+                                continue;
+
+                            }
+                        }
+                    }
+                    else
+                    {
+                        exitprogram = true;
+                    }
+                }
+            }
         }
     }
+    
 }
