@@ -32,9 +32,9 @@
             TopPanel = new Panel();
             LbName = new Label();
             BtnLogaut = new Button();
-            DgvListBooks = new DataGridView();
+            DgvList = new DataGridView();
             TopPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)DgvListBooks).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)DgvList).BeginInit();
             SuspendLayout();
             // 
             // TopPanel
@@ -74,35 +74,35 @@
             BtnLogaut.UseVisualStyleBackColor = false;
             BtnLogaut.Click += BtnLogaut_Click;
             // 
-            // DgvListBooks
+            // DgvList
             // 
-            DgvListBooks.AllowUserToAddRows = false;
-            DgvListBooks.AllowUserToDeleteRows = false;
-            DgvListBooks.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            DgvListBooks.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
-            DgvListBooks.BackgroundColor = SystemColors.Window;
-            DgvListBooks.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            DgvListBooks.ColumnHeadersVisible = false;
-            DgvListBooks.Dock = DockStyle.Fill;
-            DgvListBooks.GridColor = Color.White;
-            DgvListBooks.Location = new Point(2, 52);
-            DgvListBooks.MultiSelect = false;
-            DgvListBooks.Name = "DgvListBooks";
-            DgvListBooks.ReadOnly = true;
-            DgvListBooks.RowHeadersVisible = false;
+            DgvList.AllowUserToAddRows = false;
+            DgvList.AllowUserToDeleteRows = false;
+            DgvList.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            DgvList.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            DgvList.BackgroundColor = SystemColors.Window;
+            DgvList.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            DgvList.ColumnHeadersVisible = false;
+            DgvList.Dock = DockStyle.Fill;
+            DgvList.GridColor = Color.White;
+            DgvList.Location = new Point(2, 52);
+            DgvList.MultiSelect = false;
+            DgvList.Name = "DgvList";
+            DgvList.ReadOnly = true;
+            DgvList.RowHeadersVisible = false;
             dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            DgvListBooks.RowsDefaultCellStyle = dataGridViewCellStyle1;
-            DgvListBooks.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            DgvListBooks.Size = new Size(830, 457);
-            DgvListBooks.TabIndex = 1;
+            DgvList.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            DgvList.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            DgvList.Size = new Size(830, 457);
+            DgvList.TabIndex = 1;
             // 
             // FormScootersList
             // 
             AutoScaleDimensions = new SizeF(10F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(834, 511);
-            Controls.Add(DgvListBooks);
+            Controls.Add(DgvList);
             Controls.Add(TopPanel);
             Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
             Margin = new Padding(4);
@@ -111,7 +111,7 @@
             Text = "FormListBooks";
             TopPanel.ResumeLayout(false);
             TopPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)DgvListBooks).EndInit();
+            ((System.ComponentModel.ISupportInitialize)DgvList).EndInit();
             ResumeLayout(false);
         }
 
@@ -120,6 +120,6 @@
         private Panel TopPanel;
         private Label LbName;
         private Button BtnLogaut;
-        private DataGridView DgvListBooks;
+        private DataGridView DgvList;
     }
 }
